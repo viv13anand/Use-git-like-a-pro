@@ -1,0 +1,163 @@
+1
+00:00:06,710 --> 00:00:11,189
+We have covered a lot of ground in this
+course, and now that we are wrapping up,
+
+2
+00:00:11,189 --> 00:00:13,560
+you should feel
+confident using Git like a pro.
+
+3
+00:00:14,400 --> 00:00:16,250
+From basics to advanced features,
+
+4
+00:00:16,250 --> 00:00:19,570
+you have learned how to
+effectively manage your projects
+
+5
+00:00:19,570 --> 00:00:22,890
+using one of the most
+popular version control system.
+
+6
+00:00:23,960 --> 00:00:27,600
+Let's take a moment to recap all
+the key topics we have explored.
+
+7
+00:00:28,600 --> 00:00:31,940
+In the first lesson, we
+started with an overview of version
+
+8
+00:00:31,940 --> 00:00:34,369
+control and got
+familiar with Git and GitHub.
+
+9
+00:00:35,149 --> 00:00:37,750
+We set up Git, learned key terminologies,
+
+10
+00:00:37,750 --> 00:00:41,840
+and understood the basics of
+pushing code to a remote repository.
+
+11
+00:00:42,990 --> 00:00:48,750
+In the second lesson, we focused on
+how to use Git in your daily workflow,
+
+12
+00:00:48,750 --> 00:00:51,820
+including adding and committing
+files, fetching, pulling changes,
+
+13
+00:00:51,820 --> 00:00:56,049
+and working from both the command
+line and graphical user interface.
+
+14
+00:00:57,229 --> 00:01:00,189
+We then moved on to mastering
+commits in the third lesson.
+
+15
+00:01:00,950 --> 00:01:05,400
+Here we learned how to create
+well-structured commits, amend commits,
+
+16
+00:01:05,400 --> 00:01:10,290
+write meaningful commit messages, and
+compare changes using git diff command.
+
+17
+00:01:11,670 --> 00:01:16,250
+In the fourth lesson, we took a
+deeper look at undoing changes,
+
+18
+00:01:16,250 --> 00:01:20,060
+covering essential commands like
+git checkout, git restore, git reset,
+
+19
+00:01:20,060 --> 00:01:25,400
+and git revert to help you roll
+back or adjust your work as needed.
+
+20
+00:01:26,799 --> 00:01:30,640
+The fifth lesson
+introduced us to branches and tags,
+
+21
+00:01:30,640 --> 00:01:36,180
+where we explored how to create and
+manage branches, delete and rename them,
+
+22
+00:01:36,180 --> 00:01:38,310
+and implement effective
+branching strategies.
+
+23
+00:01:39,250 --> 00:01:42,510
+We also learned how to tag specific points
+
+24
+00:01:42,510 --> 00:01:44,959
+in the repository,
+especially for releases.
+
+25
+00:01:46,109 --> 00:01:49,769
+In the sixth lesson, we
+tackled merging and rebasing,
+
+26
+00:01:49,769 --> 00:01:53,439
+understanding the theory behind
+each, practicing both the techniques,
+
+27
+00:01:53,439 --> 00:01:55,879
+and learning how to handle conflicts.
+
+28
+00:01:56,780 --> 00:02:00,159
+We also touched on creating
+pull requests for collaboration.
+
+29
+00:02:01,239 --> 00:02:03,370
+Finally, in the seventh lesson,
+
+30
+00:02:03,370 --> 00:02:09,349
+we explored some Git advanced features
+like Git stash for saving work in progress,
+
+31
+00:02:09,349 --> 00:02:13,620
+squashing commits to clean up commit
+history, using interactive rebase,
+
+32
+00:02:13,620 --> 00:02:16,180
+and tracking changes with Git reflog.
+
+33
+00:02:17,370 --> 00:02:21,319
+And that's the course. Thank you for
+joining me in this journey to master Git.
+
+34
+00:02:21,939 --> 00:02:25,919
+I hope now you feel equipped to
+use Git confidently in your project.
