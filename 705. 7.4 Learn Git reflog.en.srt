@@ -1,0 +1,511 @@
+1
+00:00:06,690 --> 00:00:07,809
+What is a Git reflog?
+
+2
+00:00:08,449 --> 00:00:12,570
+Git reflog is basically a log
+of all of your actions in Git.
+
+3
+00:00:13,169 --> 00:00:16,420
+For example, switching
+branches or making commits.
+
+4
+00:00:17,730 --> 00:00:22,969
+This makes it easy to undo
+any action with git reflog,
+
+5
+00:00:22,969 --> 00:00:27,730
+like restoring accidentally deleted
+commits or restoring a deleted branch.
+
+6
+00:00:28,480 --> 00:00:30,469
+The log is maintained
+in chronological order
+
+7
+00:00:30,469 --> 00:00:32,759
+so that you can easily view your actions.
+
+8
+00:00:33,880 --> 00:00:39,000
+This is how it looks with the Git
+reflog. When you run Git reflog,
+
+9
+00:00:39,000 --> 00:00:43,740
+it shows you Your actions,
+for example, checkout, you
+
+10
+00:00:43,740 --> 00:00:47,630
+move to another branch,
+or you made any commit.
+
+11
+00:00:48,829 --> 00:00:51,520
+Git replog is different than git log.
+
+12
+00:00:52,219 --> 00:00:54,840
+Git log is basically
+history of your commits.
+
+13
+00:00:55,140 --> 00:00:59,079
+It shows you all your commits along
+with the metadata about the commits.
+
+14
+00:00:59,700 --> 00:01:01,820
+Git log is different than Git reflog.
+
+15
+00:01:02,939 --> 00:01:06,540
+Git log represents the
+history of your commits,
+
+16
+00:01:06,540 --> 00:01:10,140
+whereas Git reflog
+shows you a private record
+
+17
+00:01:10,140 --> 00:01:13,290
+of your actions in your Git repository.
+
+18
+00:01:14,230 --> 00:01:18,489
+This is really specific to your
+workspace, showing your local commits.
+
+19
+00:01:19,489 --> 00:01:24,450
+We can use git reflog to store lost
+commits and also to restore deleted branches.
+
+20
+00:01:26,689 --> 00:01:32,590
+In order to restore lost commits, you
+need to run command git reflog, find a hash,
+
+21
+00:01:32,590 --> 00:01:38,859
+one previous to the reset entry, This is
+the commit, which has your deleted changes.
+
+22
+00:01:39,780 --> 00:01:44,609
+So you need to check out to that hash
+and then create a branch from that commit.
+
+23
+00:01:45,989 --> 00:01:49,890
+Finally, you will have the lost
+commit in the newly created branch,
+
+24
+00:01:49,890 --> 00:01:53,799
+and you can cherry pick the
+commit in your main feature branch.
+
+25
+00:01:54,500 --> 00:01:56,620
+You can also restore a deleted branch.
+
+26
+00:01:57,340 --> 00:01:59,299
+In order to do that, do the same thing.
+
+27
+00:02:00,159 --> 00:02:02,099
+Run command git reflog.
+
+28
+00:02:02,799 --> 00:02:07,319
+Go through the reflog entries to
+find reference of the deleted branch.
+
+29
+00:02:08,219 --> 00:02:11,289
+Once you find the hash,
+you can do the same thing.
+
+30
+00:02:11,810 --> 00:02:17,189
+Just copy the hash, and then
+create a new branch from that commit.
+
+31
+00:02:18,520 --> 00:02:23,300
+Let's practice both the things together.
+So first we want to restore the commits,
+
+32
+00:02:23,300 --> 00:02:26,300
+and then we want to
+restore the deleted branches.
+
+33
+00:02:27,599 --> 00:02:35,870
+Let's go back to our
+repository, and here let's make A commit,
+
+34
+00:02:35,870 --> 00:02:40,569
+let me see git reflog demo1.
+
+35
+00:02:42,330 --> 00:02:43,789
+I will make this commit.
+
+36
+00:02:46,469 --> 00:02:52,629
+git commit-m reflog commit1.
+
+37
+00:02:56,659 --> 00:02:58,659
+Now I'm going to remove this commit.
+
+38
+00:03:00,199 --> 00:03:03,389
+So we have made the
+commit for reflog commit one.
+
+39
+00:03:04,270 --> 00:03:05,569
+I want to delete this commit.
+
+40
+00:03:06,430 --> 00:03:11,669
+And how we can do this, how we can
+delete any commit is using git reset command.
+
+41
+00:03:12,889 --> 00:03:15,479
+So I can copy the hash one before.
+
+42
+00:03:17,020 --> 00:03:25,680
+And then do git reset hyphen hyphen hard
+and the commit where I want to reset to.
+
+43
+00:03:27,479 --> 00:03:30,180
+This will move me to
+the second last commit,
+
+44
+00:03:30,180 --> 00:03:34,979
+and I will not have any changes related
+to the last commit in my working directory.
+
+45
+00:03:38,699 --> 00:03:41,750
+Now you can see I have
+permanently lost those changes.
+
+46
+00:03:45,240 --> 00:03:47,740
+I don't have my last
+commit changes anymore.
+
+47
+00:03:49,729 --> 00:03:53,590
+What if I want to
+recover this lost commit?
+
+48
+00:03:54,650 --> 00:03:59,030
+So let's start with the git
+reflog command, use git reflog.
+
+49
+00:04:00,650 --> 00:04:03,719
+And this is the command
+when I did the git reset.
+
+50
+00:04:04,439 --> 00:04:08,520
+So I want to move to hash
+one before the reset command.
+
+51
+00:04:10,300 --> 00:04:12,639
+It's this one.
+
+52
+00:04:14,419 --> 00:04:19,680
+Now I will do git checkout to this commit.
+
+53
+00:04:22,079 --> 00:04:26,730
+Now, remember when I check out to any
+commit, we are in a detached head state.
+
+54
+00:04:27,060 --> 00:04:29,170
+So we need to create a branch from here.
+
+55
+00:04:31,430 --> 00:04:39,949
+Let's create a new branch,
+checkout-b, recover commit.
+
+56
+00:04:43,730 --> 00:04:48,649
+Now I'm in this recovered commit
+branch, but when I do git log,
+
+57
+00:04:48,649 --> 00:04:51,680
+I do have my commit, which I lost.
+
+58
+00:04:52,959 --> 00:05:00,579
+So I can simply copy the hash, go back
+to the main branch, git checkout main.
+
+59
+00:05:02,800 --> 00:05:08,170
+And now I can do cherry
+pick and type the commit hash.
+
+60
+00:05:10,509 --> 00:05:14,949
+With cherry pick, I can move the
+commit from one branch to another branch.
+
+61
+00:05:16,089 --> 00:05:19,750
+So now when I run git
+log, I see the commit.
+
+62
+00:05:21,069 --> 00:05:23,680
+Which I lost back into my main branch.
+
+63
+00:05:24,459 --> 00:05:29,339
+So this is really useful if you
+accidentally delete a commit and you want it back.
+
+64
+00:05:29,879 --> 00:05:34,100
+So you can use git reflog
+to recover your lost commit.
+
+65
+00:05:39,019 --> 00:05:42,629
+Now let's see how we can
+recover our deleted branches.
+
+66
+00:05:43,750 --> 00:05:46,370
+First of all, let's create a new branch.
+
+67
+00:05:52,000 --> 00:05:55,319
+Rebase delete branch.
+
+68
+00:05:58,180 --> 00:06:01,500
+Sorry, reflog delete branch.
+
+69
+00:06:04,319 --> 00:06:15,410
+Let's make a couple of commits here. You
+get commit minus m, reflog commit two.
+
+70
+00:06:17,529 --> 00:06:18,689
+And commit three.
+
+71
+00:06:20,620 --> 00:06:24,860
+Get add all, get
+commit, reflog commit three.
+
+72
+00:06:26,160 --> 00:06:32,050
+Let's verify our commit history. So
+we have reflog commit two and three,
+
+73
+00:06:32,050 --> 00:06:34,410
+which we have made to this branch.
+
+74
+00:06:38,189 --> 00:06:44,399
+Now let's go back to main and
+I'm going to delete this branch.
+
+75
+00:06:47,120 --> 00:06:52,519
+You can delete a branch with git
+branch minus capital D and the branch name.
+
+76
+00:06:55,750 --> 00:07:04,529
+So now if I verify from the
+branch list, I don't have any branch.
+
+77
+00:07:05,899 --> 00:07:09,639
+Related to reflog delete branch.
+
+78
+00:07:10,579 --> 00:07:14,990
+You can also verify by moving it
+by trying to move to this branch,
+
+79
+00:07:14,990 --> 00:07:20,329
+but it will give you an error that this
+did not match any files known to git.
+
+80
+00:07:20,589 --> 00:07:22,850
+So because this branch does not exist.
+
+81
+00:07:24,319 --> 00:07:26,800
+Now let's see how we can
+recover deleted branches.
+
+82
+00:07:27,939 --> 00:07:36,490
+Firstly, let's create a new branch, git
+checkout minus b reflog delete branch.
+
+83
+00:07:40,290 --> 00:07:52,139
+Let's make two commits on this branch,
+git add all, git commit, minus m, reflog,
+
+84
+00:07:52,139 --> 00:07:55,300
+delete branch, commit one.
+
+85
+00:07:58,459 --> 00:08:00,850
+Let's make another commit.
+
+86
+00:08:02,110 --> 00:08:09,990
+Git reflog, minus am, commit to.
+
+87
+00:08:13,009 --> 00:08:18,839
+So now we have Reflog, delete
+branch commit one and commit two,
+
+88
+00:08:18,839 --> 00:08:21,509
+which we have made on this branch.
+
+89
+00:08:23,569 --> 00:08:25,220
+Let's go to the main branch.
+
+90
+00:08:27,850 --> 00:08:29,009
+And delete this branch.
+
+91
+00:08:29,689 --> 00:08:35,990
+So we'll do git branch minus
+capital D and the branch name.
+
+92
+00:08:39,690 --> 00:08:45,100
+Now let's verify if this branch
+exists or not with git checkout.
+
+93
+00:08:46,340 --> 00:08:49,440
+Okay, we get an error, so
+this branch is deleted.
+
+94
+00:08:50,059 --> 00:08:52,879
+You can also verify by
+running git branch command,
+
+95
+00:08:52,879 --> 00:08:56,009
+and it will display the
+list of branches you have.
+
+96
+00:08:56,730 --> 00:08:59,250
+Clearly, we don't find
+the reflog delete command.
+
+97
+00:09:00,529 --> 00:09:01,549
+Reflog delete branch.
+
+98
+00:09:02,759 --> 00:09:05,559
+So let's see how we can recover this.
+
+99
+00:09:06,779 --> 00:09:10,179
+So firstly we need to do git reflog.
+
+100
+00:09:11,639 --> 00:09:15,220
+Now here, find the entry
+where you can find your branch.
+
+101
+00:09:17,870 --> 00:09:22,500
+So here I need to find the git.
+So this is reflog delete branch.
+
+102
+00:09:23,919 --> 00:09:26,860
+This is the entry for the
+delete branch, which I created.
+
+103
+00:09:26,879 --> 00:09:31,210
+And I also made two more commits on it.
+
+104
+00:09:32,629 --> 00:09:38,710
+So ideally, if I move to this hash,
+I would have all these two entries.
+
+105
+00:09:40,850 --> 00:09:46,029
+So I can do is I can
+copy this hash, and then
+
+106
+00:09:46,029 --> 00:09:49,909
+I can do git checkout, move to this hash.
+
+107
+00:09:51,559 --> 00:09:54,799
+And let's create the
+branch with the same name.
+
+108
+00:09:58,250 --> 00:10:00,159
+Reflog, delete branch.
+
+109
+00:10:03,990 --> 00:10:07,789
+So now we have recovered the
+branch along with all the commits.
+
+110
+00:10:08,639 --> 00:10:13,159
+So this is how you can recover your
+deleted branches with Git reflog.

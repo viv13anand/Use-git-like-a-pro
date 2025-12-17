@@ -1,0 +1,85 @@
+1
+00:00:06,629 --> 00:00:11,039
+To recap what we learned in this
+lesson, so first we talked about stash,
+
+2
+00:00:11,039 --> 00:00:13,880
+and we learned how to
+stash and unstash commits.
+
+3
+00:00:15,199 --> 00:00:18,089
+Then we also saw different
+ways to squash our commits.
+
+4
+00:00:18,530 --> 00:00:22,030
+Squashing is basically
+combining multiple commits into one.
+
+5
+00:00:23,190 --> 00:00:25,609
+Then we talked about interactive rebase,
+
+6
+00:00:25,609 --> 00:00:28,839
+and we saw the powers
+of interactive rebase,
+
+7
+00:00:28,839 --> 00:00:33,689
+that we can use interactive rebase for
+amending, squashing, and deleting commits.
+
+8
+00:00:34,609 --> 00:00:36,590
+Finally, we talked about git reflog,
+
+9
+00:00:36,590 --> 00:00:40,890
+and we saw how we can recover our
+deleted commits and deleted branches.
+
+10
+00:00:41,829 --> 00:00:43,590
+Now moving to the exercise part.
+
+11
+00:00:45,439 --> 00:00:49,259
+As an exercise for part
+one, create a feature branch.
+
+12
+00:00:49,880 --> 00:00:53,060
+You can call it anything
+or feature git advanced.
+
+13
+00:00:53,840 --> 00:00:55,659
+Make three commits to the branch.
+
+14
+00:00:56,640 --> 00:00:59,780
+Change the commit message
+of the second last commit.
+
+15
+00:01:00,939 --> 00:01:04,329
+Also, squash the last two
+commits and verify using
+
+16
+00:01:04,329 --> 00:01:06,969
+git log if everything
+is changed correctly.
+
+17
+00:01:08,469 --> 00:01:13,489
+As a part two, make a commit,
+delete the commit using hard reset,
+
+18
+00:01:13,489 --> 00:01:16,579
+and then try to
+recover the deleted commit.

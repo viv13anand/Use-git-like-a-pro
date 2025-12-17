@@ -1,0 +1,481 @@
+1
+00:00:06,639 --> 00:00:08,019
+What is an interactive rebase?
+
+2
+00:00:08,599 --> 00:00:11,900
+Interactive rebase allows you
+to rewrite the commit history.
+
+3
+00:00:12,800 --> 00:00:17,690
+With interactive rebase, you can do a
+bunch of things like changing commit messages.
+
+4
+00:00:18,210 --> 00:00:21,530
+You can also combine multiple
+commits, which is squashing.
+
+5
+00:00:22,230 --> 00:00:24,989
+Then you can also split
+and edit existing commits.
+
+6
+00:00:25,640 --> 00:00:28,839
+You can reorder commits
+or even delete commits.
+
+7
+00:00:30,199 --> 00:00:34,869
+You can also change a commit message
+using amend command, but with amend,
+
+8
+00:00:34,869 --> 00:00:37,390
+you can only amend the last commit.
+
+9
+00:00:38,390 --> 00:00:43,159
+Interactive rebase allows you to
+reword any commit in your Git history.
+
+10
+00:00:44,149 --> 00:00:47,450
+You can use the reword
+keyword to change the message.
+
+11
+00:00:48,350 --> 00:00:50,939
+This is how it looks on your screen,
+
+12
+00:00:50,939 --> 00:00:54,170
+that you can use reword and
+change the commit message.
+
+13
+00:00:54,950 --> 00:00:58,119
+You can combine multiple
+commits using squash keyword.
+
+14
+00:00:58,880 --> 00:01:02,549
+In order to open the
+screen with interactive rebase,
+
+15
+00:01:02,549 --> 00:01:06,219
+run command git rebase
+minus i head tilde n.
+
+16
+00:01:06,219 --> 00:01:12,340
+N here also refers to how many
+commits you want to go back from head.
+
+17
+00:01:15,030 --> 00:01:18,069
+You can also delete
+commits with Interactive Rebase.
+
+18
+00:01:19,329 --> 00:01:22,359
+In order to delete a
+commit, use drop keyword.
+
+19
+00:01:23,200 --> 00:01:25,340
+Let's see how
+everything looks in practice.
+
+20
+00:01:25,900 --> 00:01:28,870
+We would be amending
+commits, squashing commits,
+
+21
+00:01:28,870 --> 00:01:31,420
+and deleting commits
+using Interactive Rebase.
+
+22
+00:01:32,719 --> 00:01:34,450
+Let's go back to our repository.
+
+23
+00:01:35,590 --> 00:01:38,269
+Let me here just make three commits.
+
+24
+00:01:43,599 --> 00:01:56,030
+Interactive rebase commit one,
+git add all, git commit minus m,
+
+25
+00:01:56,030 --> 00:02:00,549
+interactive rebase commit one.
+
+26
+00:02:02,390 --> 00:02:04,129
+Let's make two more commits.
+
+27
+00:02:05,530 --> 00:02:08,370
+We need to add it and then make a commit.
+
+28
+00:02:11,479 --> 00:02:17,580
+And the third commit with
+git add all and git commit.
+
+29
+00:02:19,870 --> 00:02:21,289
+Let's verify our commits.
+
+30
+00:02:22,289 --> 00:02:25,210
+So now we have commit one,
+commit two, and commit three.
+
+31
+00:02:26,460 --> 00:02:29,819
+Now I want to change the
+message of second last commit.
+
+32
+00:02:30,909 --> 00:02:35,129
+Remember that if you want to change
+the commit message of last commit,
+
+33
+00:02:35,129 --> 00:02:37,409
+you can use amend command as well.
+
+34
+00:02:38,050 --> 00:02:42,009
+But since we want to change the
+message of second last commit,
+
+35
+00:02:42,009 --> 00:02:43,659
+we can use interactive rebase.
+
+36
+00:02:45,099 --> 00:02:50,719
+In order to change the message of
+second last commit, move one commit before,
+
+37
+00:02:50,719 --> 00:02:53,530
+which is this commit, copy the hash,
+
+38
+00:02:56,590 --> 00:03:01,930
+And now open interactive rebase
+screen with git rebase, minus i,
+
+39
+00:03:01,930 --> 00:03:06,789
+minus i is for interactive,
+and paste the copied hash.
+
+40
+00:03:09,590 --> 00:03:12,240
+Now you see your last two commits,
+
+41
+00:03:12,240 --> 00:03:16,020
+and we wanted to change
+the message for commit to.
+
+42
+00:03:17,919 --> 00:03:20,199
+You can do it using reword keyboard.
+
+43
+00:03:20,740 --> 00:03:23,080
+So let's change pic to reword.
+
+44
+00:03:26,030 --> 00:03:28,860
+Click Escape, colon, WQ.
+
+45
+00:03:30,400 --> 00:03:34,259
+So now Interactive Rebase asks
+you to change the commit message.
+
+46
+00:03:34,740 --> 00:03:46,270
+Enter your new commit message. Press I,
+and Interactive Rebase reverted commit.
+
+47
+00:03:54,930 --> 00:03:59,750
+Let's save it, and let's
+verify in the git log.
+
+48
+00:04:01,169 --> 00:04:05,030
+So see, we have changed the
+message of second last commit,
+
+49
+00:04:05,030 --> 00:04:07,830
+and now it says
+interactive rebase reworded commit.
+
+50
+00:04:09,789 --> 00:04:14,460
+In order to open the interactive
+rebase screen, you can also use head.
+
+51
+00:04:15,520 --> 00:04:19,379
+Let's say now I want to change the
+commit message of third last commit,
+
+52
+00:04:19,379 --> 00:04:27,459
+so I need to go Either I can do is
+copy the hash of one commit before,
+
+53
+00:04:27,459 --> 00:04:34,670
+or what I can do is I can say
+get rebase minus I head three.
+
+54
+00:04:35,449 --> 00:04:38,910
+This means go three commits before head.
+
+55
+00:04:40,990 --> 00:04:44,480
+So now you can see
+your last three commits,
+
+56
+00:04:44,480 --> 00:04:49,129
+and we want to change the
+commit message of the first commit.
+
+57
+00:04:55,480 --> 00:05:05,800
+So let's check reword, escape
+wq, and let's change this as well.
+
+58
+00:05:07,279 --> 00:05:12,050
+Interactive rebase, escape wq.
+
+59
+00:05:13,209 --> 00:05:19,209
+Now let's verify in Git log, and we have
+changed the message of third last commit.
+
+60
+00:05:20,600 --> 00:05:23,689
+So this is how you can
+use interactive rebase
+
+61
+00:05:23,689 --> 00:05:26,100
+to change the messages of your commits.
+
+62
+00:05:28,160 --> 00:05:33,009
+Now let's see how we can use
+interactive rebase to squash our commits.
+
+63
+00:05:33,810 --> 00:05:35,470
+We can play with the same commits.
+
+64
+00:05:37,089 --> 00:05:42,430
+Now let's say I want to squash all
+three commits, commit one, commit two,
+
+65
+00:05:42,430 --> 00:05:45,100
+and commit three into a single commit.
+
+66
+00:05:47,040 --> 00:05:50,339
+So first thing we need to do
+is open the interactive rebase.
+
+67
+00:05:50,920 --> 00:05:56,759
+So we copy the commit, one commit
+before, or we can also use head.
+
+68
+00:05:59,329 --> 00:06:05,759
+In order to open interactive rebase,
+click on right, get rebase minus I, head,
+
+69
+00:06:05,759 --> 00:06:09,899
+because we want to squash
+our last three commits.
+
+70
+00:06:10,680 --> 00:06:13,560
+So I'm saying go three commits before.
+
+71
+00:06:16,279 --> 00:06:18,930
+Now I can see all of
+my last three commits.
+
+72
+00:06:20,670 --> 00:06:25,250
+And here, let's say I
+want to squash my second
+
+73
+00:06:25,250 --> 00:06:29,379
+and third commit on
+top of my first commit.
+
+74
+00:06:30,000 --> 00:06:34,360
+So this commit one should also have
+commit two and commit three files.
+
+75
+00:06:37,339 --> 00:06:40,639
+In order to squash, change the squash.
+
+76
+00:06:43,040 --> 00:06:47,019
+Change pick to squash
+for third commit as well.
+
+77
+00:06:47,399 --> 00:06:51,379
+What this will do is that it
+will combine the two commits
+
+78
+00:06:51,379 --> 00:06:54,360
+with the squash into
+the one which is picked.
+
+79
+00:06:59,019 --> 00:07:01,189
+Press escape, colon, wq.
+
+80
+00:07:03,670 --> 00:07:09,079
+Now here, what you can also do here
+is you can provide your own message,
+
+81
+00:07:09,079 --> 00:07:11,970
+or you can simply use the git message.
+
+82
+00:07:13,430 --> 00:07:17,310
+I'm going to use the same
+default one provided by git.
+
+83
+00:07:19,149 --> 00:07:22,649
+And now here you can say git log,
+
+84
+00:07:22,649 --> 00:07:28,329
+and it says that you have interactive
+rebase commit one, the second commit,
+
+85
+00:07:28,329 --> 00:07:31,829
+which we reworded, and
+third commit as well.
+
+86
+00:07:32,790 --> 00:07:38,870
+So now it has created the combination of
+last three commits into the single commit.
+
+87
+00:07:40,769 --> 00:07:43,930
+Last thing we want to also
+practice is dropping commit.
+
+88
+00:07:44,269 --> 00:07:48,329
+So let's make two more commits.
+
+89
+00:07:49,850 --> 00:07:51,670
+Drop commit one.
+
+90
+00:07:58,569 --> 00:07:59,879
+Get add all.
+
+91
+00:08:01,939 --> 00:08:06,959
+Get commit minus m. Drop one.
+
+92
+00:08:09,730 --> 00:08:17,500
+Let's make two commits, git
+add all, git commit drop two.
+
+93
+00:08:18,819 --> 00:08:23,709
+Let's verify these commits in the git log
+command. So we have drop one and drop two.
+
+94
+00:08:24,589 --> 00:08:26,629
+Let me now delete this commit.
+
+95
+00:08:29,000 --> 00:08:36,419
+In order to do that, go to one
+commit before, or you can also use head,
+
+96
+00:08:36,419 --> 00:08:42,919
+but let's copy this hash, open
+interactive rebase, get rebase, minus i, commit hash.
+
+97
+00:08:47,840 --> 00:08:58,029
+Now we want to drop the second
+commit, so let's choose drop, colon wq,
+
+98
+00:09:00,360 --> 00:09:02,360
+Let's go to Git log and verify.
+
+99
+00:09:03,480 --> 00:09:06,750
+So now you can see the
+second last commit which
+
+100
+00:09:06,750 --> 00:09:09,360
+we made dropped to, it has been removed.
+
+101
+00:09:11,259 --> 00:09:16,159
+So this is how you can use interactive
+rebase to change the message of your commit.
+
+102
+00:09:16,779 --> 00:09:19,820
+Then you can also do
+squashing using interactive rebase.
+
+103
+00:09:20,340 --> 00:09:24,799
+And finally, you can also delete
+commits using interactive rebase.

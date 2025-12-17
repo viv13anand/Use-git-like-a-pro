@@ -1,0 +1,477 @@
+1
+00:00:06,740 --> 00:00:11,939
+Stash is a place where you can
+temporarily save the changes you made to your working
+
+2
+00:00:11,939 --> 00:00:16,820
+directory so that you can work on
+something else and come back to it later.
+
+3
+00:00:17,800 --> 00:00:22,320
+It's very useful when you have to
+quickly switch branches to work on something
+
+4
+00:00:22,320 --> 00:00:26,210
+else while you were already in
+the middle of changing a file.
+
+5
+00:00:26,929 --> 00:00:28,030
+Let's take an example.
+
+6
+00:00:29,530 --> 00:00:33,490
+Let's say you were working on a
+feature and you have some uncommitted files.
+
+7
+00:00:35,070 --> 00:00:37,229
+Now, maybe there was a bug in master,
+
+8
+00:00:37,229 --> 00:00:41,000
+so you have to quickly go back
+to the master to fix the bug.
+
+9
+00:00:41,799 --> 00:00:47,270
+In order to do that, you will run
+command-git checkout master, but in this case,
+
+10
+00:00:47,270 --> 00:00:49,450
+there can be two possible scenarios.
+
+11
+00:00:50,810 --> 00:00:53,189
+Since you have some uncommitted files,
+
+12
+00:00:53,189 --> 00:00:58,759
+if those uncommitted files are new
+set of files which are not on master,
+
+13
+00:00:58,759 --> 00:01:02,329
+you would move to the
+master because there are
+
+14
+00:01:02,329 --> 00:01:05,909
+no conflicts along with
+the set of new files.
+
+15
+00:01:07,719 --> 00:01:12,939
+Another case is that you have modified
+the set of files which are already on master.
+
+16
+00:01:13,700 --> 00:01:18,560
+In this case, when you try to move
+to master using git checkout command,
+
+17
+00:01:18,560 --> 00:01:23,769
+git will give you an error that your
+local changes would be overwritten by checkout.
+
+18
+00:01:24,469 --> 00:01:28,400
+Please commit your changes or
+stash them before switching branches.
+
+19
+00:01:29,040 --> 00:01:35,930
+So here you have one option that you
+can commit your changes Or you can also
+
+20
+00:01:35,930 --> 00:01:40,799
+do is that you can put your
+changes in a special place called stash.
+
+21
+00:01:41,659 --> 00:01:46,980
+So you can keep your changes on the
+stash and move to the master branch,
+
+22
+00:01:46,980 --> 00:01:50,890
+fix the bug which is in
+the master branch, come back
+
+23
+00:01:50,890 --> 00:01:53,730
+to the feature branch,
+and apply the changes.
+
+24
+00:01:54,810 --> 00:02:00,189
+So Git stash is really handy if you
+are in the middle of making changes in
+
+25
+00:02:00,189 --> 00:02:04,560
+a feature branch and you have to
+quickly switch to a different branch.
+
+26
+00:02:05,730 --> 00:02:07,150
+How do we use git stash?
+
+27
+00:02:08,069 --> 00:02:10,409
+So we can use command git stash push.
+
+28
+00:02:11,030 --> 00:02:16,280
+This will push the entry into the
+stash with all the uncommitted files.
+
+29
+00:02:16,900 --> 00:02:18,819
+Then you can use git stash pop,
+
+30
+00:02:18,819 --> 00:02:22,099
+which will take out the changes
+from the stash and apply them.
+
+31
+00:02:22,680 --> 00:02:24,539
+We also have git stash apply.
+
+32
+00:02:25,409 --> 00:02:30,189
+It also applies thick stash changes,
+but preserve the entry in the stash.
+
+33
+00:02:31,110 --> 00:02:35,090
+It is useful if you want to apply
+the same changes to multiple branches.
+
+34
+00:02:36,189 --> 00:02:41,280
+Please note that git stash command does
+not push the untracked files to stash.
+
+35
+00:02:42,259 --> 00:02:47,009
+In order to push all the files to
+stash, including untracked ones,
+
+36
+00:02:47,009 --> 00:02:52,949
+use command git stash push minus u
+minus k. Let's go back to our repo.
+
+37
+00:02:54,110 --> 00:03:02,740
+I will create a new feature
+branch, git checkout-p feeds-demo.
+
+38
+00:03:04,199 --> 00:03:06,250
+Let's change the file one again.
+
+39
+00:03:09,610 --> 00:03:15,030
+Also, let's create a new file,
+like file4.txt, new file for stash.
+
+40
+00:03:21,990 --> 00:03:25,729
+Now my feature branch already
+has some uncommitted changes.
+
+41
+00:03:26,810 --> 00:03:31,280
+Now if I move to my master
+branch, git checkout main,
+
+42
+00:03:31,280 --> 00:03:35,340
+I would be able to
+successfully move to the main
+
+43
+00:03:35,340 --> 00:03:38,590
+branch and my changes also move with me.
+
+44
+00:03:39,520 --> 00:03:43,719
+So if I do get status, I
+have all the changes which
+
+45
+00:03:43,719 --> 00:03:47,219
+I made on the feature
+branch on the main branch.
+
+46
+00:03:48,219 --> 00:03:55,009
+Otherwise, what I could do was
+simply go back to my feature branch.
+
+47
+00:03:59,169 --> 00:04:02,710
+I can choose to push the
+changes into the stash.
+
+48
+00:04:06,280 --> 00:04:11,060
+One thing to note here is that git
+stash, because I ran git stash push,
+
+49
+00:04:12,180 --> 00:04:13,620
+And let's check the git status.
+
+50
+00:04:14,120 --> 00:04:17,670
+So we have only pushed
+the file one, but file four
+
+51
+00:04:17,670 --> 00:04:20,889
+was a newly created
+file, so it was not pushed.
+
+52
+00:04:22,029 --> 00:04:26,110
+Let's pop the changes, and
+let's try to push it again.
+
+53
+00:04:27,189 --> 00:04:32,410
+So if you want to push both
+tracked and untracked files,
+
+54
+00:04:32,410 --> 00:04:37,160
+we want to push both file 4 and file 1.
+
+55
+00:04:38,079 --> 00:04:41,120
+So we can do it using git stash push .
+
+56
+00:04:43,600 --> 00:04:46,540
+This will also push your
+untracked files in the stash.
+
+57
+00:04:49,889 --> 00:04:52,290
+So now I can go back to the main branch.
+
+58
+00:04:53,189 --> 00:04:56,920
+If I want to make any
+changes to the main branch,
+
+59
+00:04:56,920 --> 00:05:02,100
+like we talked about a
+bug. So let's do a bug fix.
+
+60
+00:05:08,569 --> 00:05:09,329
+Make the change.
+
+61
+00:05:14,740 --> 00:05:18,439
+Bug fix, git commit.
+
+62
+00:05:22,779 --> 00:05:26,779
+And now I can go back to my feature
+branch where I was working before.
+
+63
+00:05:27,850 --> 00:05:34,189
+Git checkout features dash demo.
+
+64
+00:05:37,240 --> 00:05:39,579
+And I can apply back the changes.
+
+65
+00:05:43,069 --> 00:05:48,449
+So now I have the changes which I
+made to my Stash demo feature branch.
+
+66
+00:05:49,120 --> 00:06:03,970
+So this is how you can use Stash Let's
+see what happens if I commit these changes,
+
+67
+00:06:03,970 --> 00:06:10,920
+git add all, git commit, commit one.
+
+68
+00:06:14,850 --> 00:06:18,240
+I have committed my
+changes on the feature branch.
+
+69
+00:06:19,019 --> 00:06:20,800
+Now I will make more changes.
+
+70
+00:06:22,379 --> 00:06:24,670
+Let's change the file one.
+
+71
+00:06:34,139 --> 00:06:39,319
+So now, when I try to move to main
+branch, this will give me an error.
+
+72
+00:06:41,220 --> 00:06:46,370
+Your local changes to the following
+files would be overwritten by checkout,
+
+73
+00:06:46,370 --> 00:06:50,649
+so please commit or stash
+them before you switch branches.
+
+74
+00:06:51,569 --> 00:06:56,629
+And this is because file one has
+a different text in this branch,
+
+75
+00:06:56,629 --> 00:07:00,519
+whereas file one has a
+different text in main branch.
+
+76
+00:07:00,810 --> 00:07:03,269
+So we are not able to directly switch.
+
+77
+00:07:04,629 --> 00:07:07,569
+So of course we can do is git stash.
+
+78
+00:07:08,680 --> 00:07:12,879
+Push this time because it's
+already an existing file.
+
+79
+00:07:13,139 --> 00:07:15,339
+We don't need to use minus you flag.
+
+80
+00:07:16,120 --> 00:07:18,040
+We can simply do get stash push.
+
+81
+00:07:19,430 --> 00:07:22,829
+We can go back to our main branch.
+
+82
+00:07:25,089 --> 00:07:28,889
+Do the fix or whatever we want to work on,
+
+83
+00:07:28,889 --> 00:07:33,829
+and then we can go back to
+our feature branch and pop the
+
+84
+00:07:33,829 --> 00:07:37,629
+changes whenever we are done
+working on the main branch.
+
+85
+00:07:41,879 --> 00:07:47,360
+So let's create another Bug fix 2.
+
+86
+00:07:49,720 --> 00:07:52,680
+Git add all. Git commit.
+
+87
+00:07:54,220 --> 00:07:55,199
+Bug to fix.
+
+88
+00:07:57,420 --> 00:08:00,620
+And now we can go back
+to our feature branch.
+
+89
+00:08:02,319 --> 00:08:03,860
+Git checkout.
+
+90
+00:08:06,269 --> 00:08:09,000
+Stash demo.
+
+91
+00:08:09,959 --> 00:08:15,279
+Let's say I want to apply these
+stashed changes to the main branch.
+
+92
+00:08:15,839 --> 00:08:20,230
+So let's stash these changes again.
+
+93
+00:08:20,250 --> 00:08:24,899
+And let's say I want to apply
+these changes to another branch.
+
+94
+00:08:26,920 --> 00:08:28,720
+So we can go to the main branch,
+
+95
+00:08:28,720 --> 00:08:31,430
+and let's say I want to
+apply it on the main branch.
+
+96
+00:08:32,570 --> 00:08:34,870
+So I will do git stash pop,
+
+97
+00:08:34,870 --> 00:08:38,379
+but this time there
+will be conflicts Because
+
+98
+00:08:38,379 --> 00:08:42,950
+the stashed entry had a different
+change, which was stash demo 2.
+
+99
+00:08:43,690 --> 00:08:47,590
+And the main branch had a different
+text, which is bug fix bug fix 2.
+
+100
+00:08:48,129 --> 00:08:50,799
+So you can choose which
+ones you want to apply.
+
+101
+00:08:50,820 --> 00:08:53,360
+Let's say we want to accept both changes.
+
+102
+00:08:53,879 --> 00:08:54,519
+And now you have.
+
+103
+00:08:55,259 --> 00:08:57,909
+Resolve the changes
+because of the git stash pop.
