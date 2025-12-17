@@ -1,0 +1,278 @@
+1
+00:00:06,650 --> 00:00:09,599
+Just to recap what we
+learned in this section,
+
+2
+00:00:09,599 --> 00:00:12,539
+the first thing we talked
+about was version control.
+
+3
+00:00:12,720 --> 00:00:14,740
+So we talked about
+what is version control.
+
+4
+00:00:14,759 --> 00:00:18,179
+Git is an open source
+version control system,
+
+5
+00:00:18,179 --> 00:00:21,589
+which gives us ability
+to track changes within
+
+6
+00:00:21,589 --> 00:00:24,570
+the same file without
+creating multiple files.
+
+7
+00:00:25,129 --> 00:00:27,859
+Also, it allows us to
+collaborate with other people.
+
+8
+00:00:28,879 --> 00:00:30,940
+Then we also talked about what is GitHub.
+
+9
+00:00:31,460 --> 00:00:34,920
+In GitHub, we saw that Git and
+GitHub both are two separate things.
+
+10
+00:00:35,439 --> 00:00:37,649
+Git is a version control software,
+
+11
+00:00:37,649 --> 00:00:41,700
+whereas GitHub is a hosting
+platform where you can host your
+
+12
+00:00:41,700 --> 00:00:45,369
+Git repositories so that
+you can work with your peers.
+
+13
+00:00:46,229 --> 00:00:50,439
+Then we talked about Git
+terminologies. We talked about three terminologies.
+
+14
+00:00:50,759 --> 00:00:53,899
+The first one we talked
+about was Git repository.
+
+15
+00:00:54,320 --> 00:00:59,950
+We saw that repository is nothing but
+a project with .git folder inside it.
+
+16
+00:01:00,509 --> 00:01:03,149
+And that .git folder does
+all the tracking for you.
+
+17
+00:01:04,420 --> 00:01:06,629
+Next we talked about was remote,
+
+18
+00:01:06,629 --> 00:01:12,140
+and we saw that the project on our
+local machine has to be hosted on
+
+19
+00:01:12,140 --> 00:01:16,549
+the remote server if we want to
+work together with our teammates.
+
+20
+00:01:17,230 --> 00:01:20,810
+So that is a remote
+server, which we call remote.
+
+21
+00:01:21,609 --> 00:01:23,640
+Third we talked about is origin.
+
+22
+00:01:24,420 --> 00:01:31,370
+And we saw that whenever we host our
+project on GitHub, it provides us with a URL,
+
+23
+00:01:31,370 --> 00:01:34,640
+which is a remote URL of the repository.
+
+24
+00:01:35,659 --> 00:01:39,349
+Because the URL is long, we
+provide it an alias, origin,
+
+25
+00:01:39,349 --> 00:01:41,359
+because that is handy to use.
+
+26
+00:01:42,480 --> 00:01:45,390
+Third we talked about was
+the setup and configurations.
+
+27
+00:01:45,730 --> 00:01:48,849
+We learned how to install
+Git on our local machine.
+
+28
+00:01:49,329 --> 00:01:52,650
+We saw the setups for
+Mac, Linux, and Windows.
+
+29
+00:01:53,790 --> 00:01:57,049
+After the setup, we saw
+how we can configure Git.
+
+30
+00:01:57,450 --> 00:02:02,040
+There are mainly two things that we
+need to add to the Git config file.
+
+31
+00:02:02,439 --> 00:02:05,379
+One is your name, another
+one is your email address.
+
+32
+00:02:06,000 --> 00:02:09,490
+Make sure the email address that
+you are adding in the configuration
+
+33
+00:02:09,490 --> 00:02:13,270
+is same as the one you have
+registered with on your GitHub profile.
+
+34
+00:02:14,949 --> 00:02:17,889
+Next, we talked about
+creating and cloning repositories.
+
+35
+00:02:18,340 --> 00:02:23,099
+We saw how we can create our
+repository starting on our local machine.
+
+36
+00:02:23,780 --> 00:02:27,080
+We also saw that how we
+can download any public
+
+37
+00:02:27,080 --> 00:02:29,060
+repository with the git clone command.
+
+38
+00:02:29,879 --> 00:02:34,189
+And finally, we talked
+about how to push our existing
+
+39
+00:02:34,189 --> 00:02:38,069
+repository on our local
+machine to the GitHub server.
+
+40
+00:02:39,229 --> 00:02:44,810
+We saw two ways that we can,
+whenever we are starting with the project,
+
+41
+00:02:44,810 --> 00:02:49,590
+we can either start with our local
+computer, start a project there,
+
+42
+00:02:49,590 --> 00:02:52,379
+and then push it to GitHub server.
+
+43
+00:02:53,310 --> 00:02:57,360
+Alternatively, you can
+also start with the GitHub.
+
+44
+00:02:57,900 --> 00:03:02,199
+You can create a repo there. You
+can use repo.new as a shortcut.
+
+45
+00:03:03,199 --> 00:03:07,250
+And create your repository. Once
+you have the link to your repository,
+
+46
+00:03:07,250 --> 00:03:10,539
+you can clone it to your
+computer and start to make changes.
+
+47
+00:03:11,360 --> 00:03:17,539
+Time to move to the exercise now. So part
+one of this exercise is create a project.
+
+48
+00:03:18,280 --> 00:03:21,199
+You can name your project
+anything, whatever you like.
+
+49
+00:03:21,780 --> 00:03:25,000
+And create a file, learninggit.txt in it.
+
+50
+00:03:25,550 --> 00:03:29,090
+You can add any content in that text file.
+
+51
+00:03:29,469 --> 00:03:32,449
+Commit the file and push
+the project on the GitHub.
+
+52
+00:03:34,189 --> 00:03:38,770
+Part two of this exercise is that
+try to change the name of the origin.
+
+53
+00:03:39,830 --> 00:03:41,310
+You can change it to base.
+
+54
+00:03:42,250 --> 00:03:46,020
+Change the file and then push
+it to your remote server again.
+
+55
+00:03:47,500 --> 00:03:50,340
+Change the remote name
+back to origin and verify
+
+56
+00:03:50,340 --> 00:03:53,500
+if the remote is changed
+back to original or not.
+
+57
+00:03:53,900 --> 00:03:57,360
+You can do it with git
+remote hyphen b command.
+
+58
+00:03:57,379 --> 00:04:00,360
+You can check if the
+origin is set correctly.

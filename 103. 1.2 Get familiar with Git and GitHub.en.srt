@@ -1,0 +1,171 @@
+1
+00:00:06,750 --> 00:00:09,679
+In the previous
+section, we talked about Git,
+
+2
+00:00:09,679 --> 00:00:14,439
+that Git is the most popular open
+version control system that tracks changes
+
+3
+00:00:14,439 --> 00:00:19,199
+within the same file and also allow
+us to collaborate with our peers.
+
+4
+00:00:20,079 --> 00:00:25,239
+Now, throughout the course, you will
+notice that git with small g getting used,
+
+5
+00:00:25,239 --> 00:00:29,300
+and also the git with capital G
+is getting used interchangeably.
+
+6
+00:00:30,260 --> 00:00:33,479
+We use Git with capital G for the project,
+
+7
+00:00:33,479 --> 00:00:37,060
+whereas the Git with
+small g refers to the actual
+
+8
+00:00:37,060 --> 00:00:39,920
+software and is used in all the commands.
+
+9
+00:00:43,659 --> 00:00:46,960
+Now we know what is Git,
+let's also talk about GitHub.
+
+10
+00:00:48,270 --> 00:00:51,719
+You know that you can use
+Git completely free on your
+
+11
+00:00:51,719 --> 00:00:54,539
+local computer to track
+the changes in your files.
+
+12
+00:00:54,920 --> 00:00:58,320
+So it's just a software which you
+can download and get started with it.
+
+13
+00:00:59,189 --> 00:01:04,090
+However, if you want your project
+to be hosted over the internet,
+
+14
+00:01:04,090 --> 00:01:08,590
+you need a hosting service like
+GitHub or GitLab or Bitbucket.
+
+15
+00:01:09,280 --> 00:01:14,790
+All the companies use their own
+hosting platforms. Some of them use GitLab,
+
+16
+00:01:14,790 --> 00:01:16,500
+some of them use Bitbucket.
+
+17
+00:01:17,219 --> 00:01:18,549
+They are the most popular ones.
+
+18
+00:01:19,870 --> 00:01:22,230
+So GitHub is owned by Microsoft.
+
+19
+00:01:22,609 --> 00:01:26,510
+It's a hosting provider
+that provides platform for
+
+20
+00:01:26,510 --> 00:01:29,930
+developers to store their
+Git repositories online,
+
+21
+00:01:29,930 --> 00:01:34,319
+collaborate with others, and
+also manage the code contributions.
+
+22
+00:01:35,549 --> 00:01:38,810
+A project hosted on
+GitHub acts as the main
+
+23
+00:01:38,810 --> 00:01:41,349
+source for everyone
+working on that project,
+
+24
+00:01:41,349 --> 00:01:44,980
+which means that everyone
+who is working on that project
+
+25
+00:01:44,980 --> 00:01:47,879
+would read and write
+into the same project.
+
+26
+00:01:49,269 --> 00:01:53,629
+Also, GitHub provides graphical
+user interface for many Git features,
+
+27
+00:01:53,629 --> 00:01:59,299
+like merging issues or viewing commits,
+and there are many more such features.
+
+28
+00:02:00,140 --> 00:02:02,959
+A lot of people confuse
+between Git and GitHub,
+
+29
+00:02:02,959 --> 00:02:04,840
+but both are totally separate things.
+
+30
+00:02:05,680 --> 00:02:08,050
+Git is not the same thing as GitHub.
+
+31
+00:02:08,449 --> 00:02:11,759
+Git is basically an open
+source version control software,
+
+32
+00:02:11,759 --> 00:02:16,550
+which you can download it in your
+computer and start tracking your files.
+
+33
+00:02:17,150 --> 00:02:21,419
+So GitHub is a hosting platform for
+the files which are managed by Git.
+
+34
+00:02:21,960 --> 00:02:24,610
+Basically, you have your
+project on your local.
+
+35
+00:02:24,930 --> 00:02:27,419
+If you want to host it on the internet,
+
+36
+00:02:27,419 --> 00:02:29,919
+then you can leverage
+GitHub as a hosting platform.

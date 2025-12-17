@@ -1,0 +1,222 @@
+1
+00:00:06,759 --> 00:00:08,720
+So let's install Git on your computer.
+
+2
+00:00:09,140 --> 00:00:13,830
+The installation process is slightly
+different depending on your operating system.
+
+3
+00:00:14,890 --> 00:00:18,870
+For the Mac and Linux users,
+Git comes already pre-installed.
+
+4
+00:00:19,949 --> 00:00:23,699
+In order to verify this, you
+can simply type in your terminal,
+
+5
+00:00:23,699 --> 00:00:24,949
+Git hyphen hyphen version,
+
+6
+00:00:24,949 --> 00:00:29,320
+and it will tell you which version
+of Git is installed on your computer.
+
+7
+00:00:30,050 --> 00:00:34,240
+Like for example, if I go to my
+terminal and I do Git hyphen hyphen version,
+
+8
+00:00:36,490 --> 00:00:40,929
+It tells me that I have
+2.32.1 Git installed.
+
+9
+00:00:42,030 --> 00:00:45,409
+But if you want to
+update or reinstall Git,
+
+10
+00:00:45,409 --> 00:00:51,420
+you can do so by simply selecting macOS
+or Linux links on the official Git website.
+
+11
+00:00:51,780 --> 00:00:53,799
+I have already provided a link here,
+
+12
+00:00:53,799 --> 00:00:57,560
+so just go to the website and
+click on macOS and download it.
+
+13
+00:00:58,340 --> 00:01:03,439
+For the Windows users, you can also
+download Git from the same official website,
+
+14
+00:01:03,439 --> 00:01:05,980
+and just instead of Mac, select Windows.
+
+15
+00:01:06,700 --> 00:01:09,040
+The installation is quite straightforward.
+
+16
+00:01:09,939 --> 00:01:14,329
+Just that on the screen which
+asks you to select the text editor,
+
+17
+00:01:14,329 --> 00:01:19,890
+there will be Vim selected by default.
+You can change it to any other text editor,
+
+18
+00:01:19,890 --> 00:01:24,170
+like here in two of the cores, I
+would be using Visual Studio Code.
+
+19
+00:01:24,750 --> 00:01:27,670
+So you can change it to
+VS Code if you want to,
+
+20
+00:01:27,670 --> 00:01:29,870
+or any other editor
+which you prefer to use.
+
+21
+00:01:30,530 --> 00:01:35,069
+So we have Git installed. Next step
+is getting your text editor installed.
+
+22
+00:01:35,989 --> 00:01:39,819
+Since we would be creating and
+editing files throughout this course,
+
+23
+00:01:39,819 --> 00:01:42,959
+I would suggest you to
+download Visual Studio Code.
+
+24
+00:01:43,739 --> 00:01:46,049
+I have provided the link
+for Visual Studio Code,
+
+25
+00:01:46,049 --> 00:01:48,359
+so feel free to download
+it into your computer.
+
+26
+00:01:49,120 --> 00:01:53,750
+You can also follow along with any
+other text editor, whichever you prefer,
+
+27
+00:01:53,750 --> 00:01:55,180
+Sublime, Atom, or IntelliJ,
+
+28
+00:01:55,180 --> 00:01:59,099
+but I would be using Visual
+Studio Code throughout the course.
+
+29
+00:02:00,019 --> 00:02:04,019
+After installing Git and after
+having our text editor set up,
+
+30
+00:02:04,019 --> 00:02:07,290
+the next step is to have a GitHub account.
+
+31
+00:02:09,669 --> 00:02:12,870
+Note that whenever you
+create the GitHub account,
+
+32
+00:02:12,870 --> 00:02:17,680
+copy the username and your email
+address because you would be using
+
+33
+00:02:17,680 --> 00:02:21,680
+this username and email address
+when you configure Git locally.
+
+34
+00:02:22,319 --> 00:02:25,629
+So make sure you have
+noted the username and email
+
+35
+00:02:25,629 --> 00:02:28,280
+address which you have
+registered with the GitHub.
+
+36
+00:02:29,900 --> 00:02:34,000
+Now to create an
+account, go to www.github.com.
+
+37
+00:02:35,419 --> 00:02:36,870
+So just go to github.com.
+
+38
+00:02:38,639 --> 00:02:40,879
+And we'll click on Sign Up.
+
+39
+00:02:43,080 --> 00:02:44,060
+Enter your email.
+
+40
+00:02:45,960 --> 00:02:48,960
+Please note down the email
+which you used to register with
+
+41
+00:02:48,960 --> 00:02:51,680
+it because we would need it
+for the Git configuration.
+
+42
+00:02:54,419 --> 00:02:55,439
+Create a password.
+
+43
+00:02:58,680 --> 00:02:59,650
+Click on Continue.
+
+44
+00:03:00,560 --> 00:03:04,770
+Enter the username. Also make sure you
+have noted down the username as well.
+
+45
+00:03:06,719 --> 00:03:17,439
+You can simply click on Continue,
+verify your account, and let's submit.
+
+46
+00:03:20,949 --> 00:03:25,990
+So we are almost done. You will receive
+a code on your email. Just fill it up,
+
+47
+00:03:25,990 --> 00:03:28,909
+and that's everything about
+the registration with GitHub.

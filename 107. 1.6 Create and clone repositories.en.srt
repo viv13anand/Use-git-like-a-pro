@@ -1,0 +1,409 @@
+1
+00:00:06,780 --> 00:00:08,880
+So let's create our first repository.
+
+2
+00:00:09,619 --> 00:00:12,119
+We already talked about
+what a repository is.
+
+3
+00:00:12,740 --> 00:00:16,679
+It's just a project with
+.git folder inside it.
+
+4
+00:00:17,339 --> 00:00:22,070
+This .git folder does all the tracking
+of changes in your files in your project.
+
+5
+00:00:22,839 --> 00:00:26,609
+In order to start with a
+repository, you need to initialize git.
+
+6
+00:00:27,089 --> 00:00:29,269
+So you need to do git init in the project.
+
+7
+00:00:29,890 --> 00:00:32,560
+It will create a .git
+folder inside the project,
+
+8
+00:00:32,560 --> 00:00:35,219
+and git will start to
+track your project files.
+
+9
+00:00:36,890 --> 00:00:40,320
+Sometimes you don't want Git
+to track some of your files,
+
+10
+00:00:40,320 --> 00:00:43,130
+so you can add a file which is .gitignore,
+
+11
+00:00:43,130 --> 00:00:48,119
+and you can add all the files which
+you don't want to track in that file.
+
+12
+00:00:49,640 --> 00:00:51,520
+Let's see how this looks in practice.
+
+13
+00:00:53,119 --> 00:01:01,020
+So let's start with the project. Let's
+create a project. Let's call it Git course.
+
+14
+00:01:03,509 --> 00:01:06,629
+Let's move into the course directory.
+
+15
+00:01:08,439 --> 00:01:13,689
+And I will open it in my Visual
+Studio Code using the command code dot.
+
+16
+00:01:14,590 --> 00:01:16,689
+If you're not able to do it like this,
+
+17
+00:01:16,689 --> 00:01:21,159
+then you need to go to the
+Visual Studio Code and type
+
+18
+00:01:21,159 --> 00:01:24,640
+your install code command
+and path shell command.
+
+19
+00:01:25,209 --> 00:01:31,099
+Once you install it, you would be able to
+open any project with the code command.
+
+20
+00:01:34,060 --> 00:01:40,060
+Now let's here create a file.
+Let's say I create a file1.txt,
+
+21
+00:01:40,060 --> 00:01:45,170
+and this is my first Git repository.
+
+22
+00:01:47,989 --> 00:01:53,140
+So right now, it's just a project with
+one file. It's not a Git repository.
+
+23
+00:01:53,700 --> 00:01:58,689
+In order to make it a Git
+repository, we need to do git init.
+
+24
+00:02:01,790 --> 00:02:09,139
+And as I do git init, let me do ls-a,
+you will see the git folder is created.
+
+25
+00:02:09,159 --> 00:02:14,659
+I did ls-a because this is a hidden
+folder, so it creates a .git folder,
+
+26
+00:02:14,659 --> 00:02:16,870
+which will do all your tracking,
+
+27
+00:02:16,870 --> 00:02:20,539
+and you can see that the
+git is already initialized.
+
+28
+00:02:21,780 --> 00:02:24,810
+To verify it again, you
+can run the status command.
+
+29
+00:02:25,439 --> 00:02:26,810
+So you can do git status.
+
+30
+00:02:29,469 --> 00:02:32,229
+And here, git tells you
+that you are on branch main.
+
+31
+00:02:32,349 --> 00:02:35,400
+We'll talk about
+branches later in the course,
+
+32
+00:02:35,400 --> 00:02:39,590
+but it says that you have
+created one new file, file1.txt.
+
+33
+00:02:40,210 --> 00:02:44,020
+And there are no commits. We'll also be
+talking about commits later in the course.
+
+34
+00:02:44,439 --> 00:02:49,169
+But basically, your project is
+initialized as a Git repository. Now,
+
+35
+00:02:49,169 --> 00:02:52,800
+whatever changes you do in
+this project is tracked by Git.
+
+36
+00:02:53,909 --> 00:02:56,629
+Now, sometimes you don't
+want some files to be tracked.
+
+37
+00:02:56,969 --> 00:03:00,069
+So we talked about that
+you can use gitignore file.
+
+38
+00:03:01,560 --> 00:03:08,259
+Such files can be your test files, or in
+a lot of projects, it is node modules,
+
+39
+00:03:08,259 --> 00:03:10,240
+that you have node modules.
+
+40
+00:03:12,680 --> 00:03:18,409
+And Let's create
+something here, datefn.js.
+
+41
+00:03:19,189 --> 00:03:25,139
+Let's say you have some node modules, and
+I don't want to track The node modules.
+
+42
+00:03:25,620 --> 00:03:32,330
+So right now, if I do git status, then
+git does tell me that you have two files,
+
+43
+00:03:32,330 --> 00:03:35,689
+like file one and also
+this folder, node modules.
+
+44
+00:03:36,530 --> 00:03:40,409
+But what I want to tell Git
+is ignore the node modules.
+
+45
+00:03:40,569 --> 00:03:43,349
+All the changes in node
+modules, Git should not care about.
+
+46
+00:03:44,460 --> 00:03:51,099
+So I will create
+gitignore. Yeah, just .gitignore.
+
+47
+00:03:52,280 --> 00:03:55,419
+And here, write node modules.
+
+48
+00:03:57,990 --> 00:04:03,840
+Now when I run my status
+command, now we only have two files.
+
+49
+00:04:04,000 --> 00:04:08,349
+One is the gitignore file, which
+I just created, and file1.txt,
+
+50
+00:04:08,349 --> 00:04:11,120
+but we don't have any node modules.
+
+51
+00:04:12,340 --> 00:04:17,939
+So this is how you can ignore some
+files by adding them to gitignore.
+
+52
+00:04:18,680 --> 00:04:25,329
+There's often another folder which we
+usually ignore is the coverage folder.
+
+53
+00:04:26,069 --> 00:04:27,829
+This includes your test coverage.
+
+54
+00:04:28,470 --> 00:04:33,540
+So you can also exclude it from the
+git by just adding it to your gitignore.
+
+55
+00:04:34,300 --> 00:04:39,339
+There are a bunch of ways in
+which you can generate your gitignore
+
+56
+00:04:39,339 --> 00:04:42,439
+file automatically because
+there are some available templates.
+
+57
+00:04:43,019 --> 00:04:45,769
+I'm going to show you
+one of the such template.
+
+58
+00:04:46,589 --> 00:04:47,170
+So just...
+
+59
+00:04:48,569 --> 00:04:52,600
+You can go to toptal.com
+slash developer slash gitignore,
+
+60
+00:04:52,600 --> 00:04:58,670
+and here you can select the programming
+language. Let's say I have selected React,
+
+61
+00:04:58,670 --> 00:05:01,329
+and now when I click on create,
+
+62
+00:05:01,329 --> 00:05:04,750
+it generates like a
+template for the gitignore file.
+
+63
+00:05:05,000 --> 00:05:08,069
+So it means that if you are
+working on a React project,
+
+64
+00:05:08,769 --> 00:05:12,040
+Those are the files which you
+would add in the gitignore.
+
+65
+00:05:12,439 --> 00:05:15,000
+You can always change it
+according to your requirements.
+
+66
+00:05:15,379 --> 00:05:17,649
+So this is also one
+way you can generate it.
+
+67
+00:05:19,449 --> 00:05:22,610
+You can also do the
+same for like the Python.
+
+68
+00:05:23,449 --> 00:05:27,660
+So let's say I have selected
+Python as the programming language.
+
+69
+00:05:28,300 --> 00:05:31,399
+Now I say create, and it creates this.
+
+70
+00:05:31,720 --> 00:05:35,060
+There are a lot of files like
+coverage folder, cache folder.
+
+71
+00:05:35,560 --> 00:05:39,829
+So it has created a template for us, and
+then we can modify according to our needs.
+
+72
+00:05:41,189 --> 00:05:43,529
+Now we know how to create our repository.
+
+73
+00:05:43,939 --> 00:05:47,199
+Now let's also see how to
+clone a public repository.
+
+74
+00:05:47,980 --> 00:05:52,199
+In order to clone a public
+repository, you need to use git clone command.
+
+75
+00:05:53,170 --> 00:05:56,389
+Let's try to clone a public
+repo, which is FlowByte React.
+
+76
+00:05:56,949 --> 00:05:58,790
+So I will go to their website.
+
+77
+00:05:59,670 --> 00:06:04,779
+So this is their website, and I want to
+download this repo to my local computer.
+
+78
+00:06:05,180 --> 00:06:11,560
+So what I can do is just click on the
+code and use HTTPS and copy the link here.
+
+79
+00:06:12,720 --> 00:06:19,110
+Now here you can use git clone
+command and type the copied URL.
+
+80
+00:06:19,889 --> 00:06:24,649
+Once we hit enter, it
+will Basically, download it,
+
+81
+00:06:24,649 --> 00:06:28,750
+and now you can see if we already have it.
+
+82
+00:06:29,129 --> 00:06:35,939
+So it's FlowByte React is already
+created. I will just move to FlowByte React.
+
+83
+00:06:38,290 --> 00:06:42,019
+And you can open it again
+in your Visual Studio Code,
+
+84
+00:06:42,019 --> 00:06:46,759
+and it will show you all the
+code that is there in the repo.
+
+85
+00:06:47,079 --> 00:06:52,990
+So this is how you download any public
+repo by using just git clone command.
+
+86
+00:06:53,470 --> 00:06:56,170
+Git clone and the URL of the repository.

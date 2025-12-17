@@ -1,0 +1,245 @@
+1
+00:00:06,740 --> 00:00:10,410
+Now that we have installed Git,
+we have installed our text editor,
+
+2
+00:00:10,410 --> 00:00:13,150
+and we also have set
+up our GitHub account,
+
+3
+00:00:13,150 --> 00:00:16,820
+next thing we need to do is
+to do some Git configurations.
+
+4
+00:00:17,949 --> 00:00:22,500
+First of all, check that if you already
+have Git installed with this command,
+
+5
+00:00:22,500 --> 00:00:23,800
+git hyphen hyphen version.
+
+6
+00:00:24,379 --> 00:00:27,820
+So for the configurations, you
+just need to add your name and email.
+
+7
+00:00:28,539 --> 00:00:32,320
+You can set it up using
+git global config. For that,
+
+8
+00:00:32,320 --> 00:00:35,490
+you just need to run the
+command git config hyphen
+
+9
+00:00:35,490 --> 00:00:38,659
+hyphen global user dot
+name and type in your name.
+
+10
+00:00:39,710 --> 00:00:44,270
+Then git config hyphen hyphen global
+user dot email and type in the email.
+
+11
+00:00:44,829 --> 00:00:48,859
+Now make sure the email address
+which you type in here should be the
+
+12
+00:00:48,859 --> 00:00:52,020
+same email address which you
+signed up into your GitHub account.
+
+13
+00:00:52,759 --> 00:00:57,399
+Another way to set up the configuration
+is directly editing the git config file.
+
+14
+00:00:57,840 --> 00:01:02,100
+You can open the git config file
+and add the name and email there.
+
+15
+00:01:02,780 --> 00:01:05,180
+Let's see how that looks
+when we actually do it.
+
+16
+00:01:06,239 --> 00:01:10,390
+So let's first check what is
+the config I already have.
+
+17
+00:01:10,870 --> 00:01:14,030
+You can do it using git
+config hyphen hyphen list.
+
+18
+00:01:14,709 --> 00:01:20,670
+So I already have things set up. I
+already have user dot email and user dot name.
+
+19
+00:01:21,700 --> 00:01:29,810
+But I can still override it with git
+config hyphen hyphen global and user dot name.
+
+20
+00:01:31,109 --> 00:01:32,689
+And I can just simply do it.
+
+21
+00:01:34,510 --> 00:01:39,340
+Ashima, and now if I just
+check if this is saved or not,
+
+22
+00:01:39,340 --> 00:01:42,299
+now you can see the user.name is Ashima.
+
+23
+00:01:44,079 --> 00:01:56,879
+Let me just set it back again. hyphen
+hyphen global user.name And similarly,
+
+24
+00:01:56,879 --> 00:02:05,549
+for the email, you can
+type in your email address.
+
+25
+00:02:17,710 --> 00:02:21,699
+Now, why we need to set the
+name and email is because
+
+26
+00:02:21,699 --> 00:02:24,699
+Git needs to know your name and email when
+
+27
+00:02:24,699 --> 00:02:28,020
+you make any commit so
+that it knows who committed
+
+28
+00:02:28,020 --> 00:02:30,680
+it and what was the email address used.
+
+29
+00:02:31,500 --> 00:02:34,639
+So without it, you won't be
+able to make any commits in Git.
+
+30
+00:02:36,340 --> 00:02:40,900
+The another way which I showed you
+was simply editing the git config file.
+
+31
+00:02:41,719 --> 00:02:48,389
+So you can open it vi using vim.gitconfig.
+
+32
+00:02:50,590 --> 00:02:54,270
+And here you can see that I
+edited my email and there is a
+
+33
+00:02:54,270 --> 00:03:04,560
+name so you can just Press I and
+start to type anything, and just save it.
+
+34
+00:03:06,610 --> 00:03:10,430
+Alternatively, if you are not
+very comfortable with Vim commands,
+
+35
+00:03:10,430 --> 00:03:14,250
+I prefer to do it open
+with Visual Studio Code.
+
+36
+00:03:15,000 --> 00:03:23,439
+So I just do code.gitconfig, and
+this will open it in Coding editor.
+
+37
+00:03:24,379 --> 00:03:28,629
+So here, I have this
+opened inside my coding editor,
+
+38
+00:03:28,629 --> 00:03:32,889
+and I can just change
+it here, easily type it.
+
+39
+00:03:34,770 --> 00:03:36,810
+Let me also change back my name again.
+
+40
+00:03:39,590 --> 00:03:42,530
+So you can choose any of the
+way which is comfortable for you.
+
+41
+00:03:42,780 --> 00:03:44,949
+You can do it via command line,
+
+42
+00:03:44,949 --> 00:03:50,250
+or you can also just open the git config
+file and edit it directly into the file.
+
+43
+00:03:51,449 --> 00:03:54,909
+Sometimes you don't know
+where your file is. So
+
+44
+00:03:54,909 --> 00:03:57,909
+usually with the Mac,
+it is going to be here.
+
+45
+00:03:58,810 --> 00:04:01,590
+But in case you don't know where it is,
+
+46
+00:04:01,590 --> 00:04:05,289
+I think there is a command
+which you can check git config.
+
+47
+00:04:07,000 --> 00:04:13,580
+Hyphen, hyphen, git config hyphen
+hyphen list hyphen hyphen show origin.
+
+48
+00:04:16,199 --> 00:04:21,939
+And that will tell you where it
+exists. Like, for example, in my case,
+
+49
+00:04:21,939 --> 00:04:24,810
+it existed inside
+users, ashimahuja.gitconfig,
+
+50
+00:04:24,810 --> 00:04:29,980
+and that's why I was opening
+it through tilt.gitconfig.
+
+51
+00:04:30,480 --> 00:04:35,500
+So if you want to know where your file
+is, you can know the path from this command.

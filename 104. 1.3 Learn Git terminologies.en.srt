@@ -1,0 +1,131 @@
+1
+00:00:06,660 --> 00:00:10,220
+While working with Git, you will
+come across many Git terminologies.
+
+2
+00:00:10,660 --> 00:00:13,380
+The first one we will
+talk about is repository.
+
+3
+00:00:14,240 --> 00:00:18,019
+So basically, when we
+set up Git in our project,
+
+4
+00:00:18,019 --> 00:00:21,050
+it creates a .git
+folder inside the project.
+
+5
+00:00:22,149 --> 00:00:27,629
+The .git folder is what will do all the
+versioning and file tracking for you.
+
+6
+00:00:28,589 --> 00:00:33,250
+A project with .git folder
+inside it is referred as repository.
+
+7
+00:00:34,810 --> 00:00:41,570
+To recap, the repository is nothing but
+your project with .git folder inside it.
+
+8
+00:00:42,090 --> 00:00:46,670
+The .git folder does all the file
+tracking, and if this folder is deleted,
+
+9
+00:00:46,670 --> 00:00:49,280
+all the versioning and
+tracking will be lost.
+
+10
+00:00:51,359 --> 00:00:53,770
+Next terminology we
+will talk about is remote.
+
+11
+00:00:54,689 --> 00:00:58,600
+So we already talked about that
+you have a project on your local,
+
+12
+00:00:58,600 --> 00:01:01,609
+but you want to host it
+on the internet because
+
+13
+00:01:01,609 --> 00:01:04,620
+you want to collaborate with
+your peers, with your coworkers.
+
+14
+00:01:05,340 --> 00:01:09,939
+So in that case, when you host
+your project to the internet,
+
+15
+00:01:09,939 --> 00:01:12,230
+it refers to as remote server.
+
+16
+00:01:13,109 --> 00:01:17,659
+This server can be of GitHub, it can
+be of GitLab, or it can be Bitbucket.
+
+17
+00:01:19,329 --> 00:01:22,230
+Third terminology which we
+are going to discuss is origin.
+
+18
+00:01:22,469 --> 00:01:26,519
+You will hear this
+terminology a lot, a lot, many times.
+
+19
+00:01:27,239 --> 00:01:31,140
+So basically, now you have your
+project hosted on a remote server.
+
+20
+00:01:32,239 --> 00:01:37,140
+In order to read and write into
+that project, you need a URL,
+
+21
+00:01:37,140 --> 00:01:42,569
+which is going to be your remote
+repository URL. This URL is really long,
+
+22
+00:01:42,569 --> 00:01:47,939
+and if you have to read and write
+into it, we have to write the whole URL.
+
+23
+00:01:48,530 --> 00:01:54,280
+So what Git provides us is with
+an alias, which is called origin.
+
+24
+00:01:55,040 --> 00:01:59,670
+Origin is just an alias, which we
+will use for the remote repo URL.
+
+25
+00:02:00,439 --> 00:02:04,590
+So that whenever you want to
+read or write into the repository,
+
+26
+00:02:04,590 --> 00:02:07,349
+you don't have to write the entire URL,
+
+27
+00:02:07,349 --> 00:02:09,419
+but you can simply use origin

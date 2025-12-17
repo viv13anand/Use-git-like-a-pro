@@ -1,0 +1,57 @@
+1
+00:00:06,740 --> 00:00:08,580
+Welcome to Lesson 1, Getting Started.
+
+2
+00:00:09,259 --> 00:00:12,720
+First of all, this and some of
+the following chapters are mainly
+
+3
+00:00:12,720 --> 00:00:16,460
+meant for those who are not
+familiar or are very new to Git.
+
+4
+00:00:17,160 --> 00:00:20,010
+So if you're already
+familiar with the basics of Git,
+
+5
+00:00:20,010 --> 00:00:22,850
+you may want to skip
+through some of the concepts.
+
+6
+00:00:23,690 --> 00:00:25,410
+If not, this is a great place to start.
+
+7
+00:00:26,969 --> 00:00:30,410
+We start off this chapter by
+learning about version control,
+
+8
+00:00:30,410 --> 00:00:33,500
+followed by understanding Git and
+some important Git terminologies
+
+9
+00:00:33,500 --> 00:00:37,270
+that you're going to be
+hearing a lot throughout the course.
+
+10
+00:00:38,350 --> 00:00:41,759
+Next, we do the Git setup,
+create our first repository.
+
+11
+00:00:42,500 --> 00:00:46,299
+We then wrap up the lesson with a
+quick summary, followed by an exercise.
+
+12
+00:00:47,140 --> 00:00:49,840
+Well, that's the plan for
+this lesson. Let's get started.
